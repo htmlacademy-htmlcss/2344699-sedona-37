@@ -15,8 +15,8 @@
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link selection" href="catalog.html">Гостиницы</a>
+          <li class="navigation-item navigation-item-selection">
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
@@ -133,9 +133,53 @@
       </section>
 
       <section>
-        <header></header>
-        <main></main>
-        <footer></footer>
+        <header>
+          <h2 class="">Найдено гостиниц: 38</h2>
+
+          <select class="select-control" aria-label="Сортировка">
+            <option value="cheap">Сначала дешевые</option>
+            <option value="expensive">Сначала дорогие</option>
+            <option value="popular">Сначала популярные</option>
+          </select>
+
+
+          <a class="button-view button-view-select" href="#">
+            <span class="visually-hidden">Показать карточки</span>
+          </a>
+          <a class="button-view" href="#">
+            <span class="visually-hidden">Показать по одному</span>
+          </a>
+          <a href="#" class="button-view">
+            <span class="visually-hidden">Показать список</span>
+          </a>
+        </header>
+
+        <main>
+
+        </main>
+
+        <footer>
+          <ul class="pagination">
+            <li class="pagination-item">
+              <a class="pagination-link pagination-current" href="#">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">4</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link pagination-gap">...</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">10</a>
+            </li>
+          </ul>
+        </footer>
       </section>
 
       <section class="newsletter-lite">
