@@ -21,6 +21,7 @@ body {
   margin: 0;
   height: 100%;
   background-color: #F2F2F2;
+  word-break: break-word;
 }
 html {
   height: 100%;
@@ -64,6 +65,7 @@ html {
   text-transform: uppercase;
   border-radius: 4px;
   font-family: "PT Sans", sans-serif;
+  height: fit-content;
 }
 .button--brown {
   background-color: #756157;
@@ -213,6 +215,7 @@ html {
   padding: 0 85px;
   box-sizing: border-box;
   background-color: rgba(131, 179, 211, 0.12);
+  height: fit-content;
 }
 .main__advantages-item--blue {
   background-color: #82B3D3;
@@ -298,6 +301,7 @@ html {
   align-items: center;
   padding: 0 85px;
   box-sizing: border-box;
+  height: fit-content;
 }
 .main__recommendations-item--blue {
   background-color: rgba(131, 179, 211, 0.12);
@@ -417,8 +421,9 @@ html {
 }
 .footer {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   margin: 40px 70px 30px 70px;
+  height: 100%;;
 }
 .footer__social-button {
   text-decoration: none;
@@ -434,7 +439,7 @@ html {
   font-size: 40px;
   line-height: 40px;
   width: 720px;
-  height: 50px;
+  min-height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -601,8 +606,9 @@ html {
 /* hotels header */
 .hotel__header {
   display: flex;
-  flex-grow: 1;
-  align-items: center;
+  width: 1060px;
+  margin: 50px 70px 40px 70px;
+  align-items: flex-start;
 }
 .catalog__button-view {
   display: flex;
@@ -615,21 +621,25 @@ html {
   align-items: center;
   margin-left: 8px;
   box-sizing: border-box;
+
+}
+.catalog__button-view:first-child {
+  margin-left: 0;
 }
 .catalog__button-view--active {
   border: 2px solid #000000;
 }
 .catalog__buttons {
   display: flex;
+  align-items: flex-start;
 }
 .catalog__titte {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
-  text-align: center;
-  margin-left: 70px;
-  margin-right: 200px;
   text-transform: uppercase;
+  margin: 0;
+  flex-grow: 1;
 }
 .catalog__select {
   font-size: 18px;
@@ -637,10 +647,10 @@ html {
   color: #333333;
   width: 292px;
   min-height: 49px;
-  margin: 50px 70px 40px 0;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   padding: 0 20px;
+  margin-right: 70px;
 }
 /* hotel list */
 .hotel-list__card-title {
@@ -699,6 +709,7 @@ html {
   display: flex;
   flex-direction: column;
   padding: 20px;
+  height: fit-content;
 }
 .hotel-list__card:nth-child(3n) {
   margin-right: 0;
