@@ -500,6 +500,7 @@ html {
   padding: 0;
   display: flex;
   margin-bottom: 40px;
+  width: 1060px;
 }
 /* catalog filter hotels */
 .catalog__filter-title {
