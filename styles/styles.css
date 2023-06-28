@@ -556,8 +556,9 @@ html {
 }
 .catalog__filter {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-evenly;
+
 }
 .catalog__button-list {
   display: flex;
@@ -574,6 +575,7 @@ html {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-direction: column;
 }
 .catalog__filter-list {
   margin: 0;
@@ -618,6 +620,46 @@ html {
 .catalog__filter-item {
   margin-bottom: 16px;
 }
+.catalog__filter-price-inputs {
+  margin-bottom: 48px;
+  display: grid;
+  grid-template-columns: 143px 143px;
+  gap: 2px;
+}
+/* filter range */
+.catalog__filter-price-range-scale {
+  position: relative;
+  height: 4px;
+  width: 287px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.catalog__filter-price-range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #FFFFFF;
+}
+.catalog__filter-price-range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+}
+.catalog__filter-price-range-toggle:focus {
+  border: 3px solid #83B3D3;
+}
+.catalog__filter-price-range-toggle:active {
+  border: 2px solid #83B3D3;
+}
+.catalog__filter-price-range-toggle--min {
+  top: -8px;
+}
+.catalog__filter-price-range-toggle--max {
+  top: -8px;
+  left: 226px;
+}
+
 /* hotels header */
 .hotel__header {
   display: flex;

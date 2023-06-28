@@ -97,13 +97,25 @@
             </fieldset>
             <fieldset class="catalog__filter-price">
               <legend class="catalog__filter-price-title">Стоимость, ₽:</legend>
-               <div class="catalog__filter-price-item">
-                <label class="catalog__filter-price-label" for="min-price">от</label>
-                <input class="catalog__filter-price-input catalog__filter-price-input--min" type="number" name="min-price" aria-label="Ввод минимальной цены." id="min-price" value="0">
-               </div>
-               <div class="catalog__filter-price-item">
-                <label class="catalog__filter-price-label" for="max-price">до</label>
-                <input class="catalog__filter-price-input catalog__filter-price-input--max" type="number" name="max-price" aria-label="Ввод максимальной цены." id="max-price" value="9000">
+              <div class="catalog__filter-price-inputs">
+                <div class="catalog__filter-price-item">
+                  <label class="catalog__filter-price-label" for="min-price">от</label>
+                  <input class="catalog__filter-price-input catalog__filter-price-input--min" type="number" name="min-price" aria-label="Ввод минимальной цены." id="min-price" value="0">
+                </div>
+                <div class="catalog__filter-price-item">
+                  <label class="catalog__filter-price-label" for="max-price">до</label>
+                  <input class="catalog__filter-price-input catalog__filter-price-input--max" type="number" name="max-price" aria-label="Ввод максимальной цены." id="max-price" value="9000">
+                </div>
+              </div>
+              <div class="catalog__filter-price-range-scale">
+                <div class="catalog__filter-price-range-bar" style="left: 0; width: 226px;">
+                  <button class="catalog__filter-price-range-toggle catalog__filter-price-range-toggle--min" type="button">
+                    <span class="hidden">Изменить минимальную цену.</span>
+                  </button>
+                  <button class="catalog__filter-price-range-toggle catalog__filter-price-range-toggle--max" type="button">
+                    <span class="hidden">Изменить максимальную цену.</span>
+                  </button>
+                </div>
               </div>
             </fieldset>
             <div class="catalog__button-list">
