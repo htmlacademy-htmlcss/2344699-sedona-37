@@ -756,10 +756,6 @@ html {
   background-color: rgba(255, 255, 255, 1);
   outline: 3px solid #83B3D3;
 }
-/* .catalog__filter-label:focus:not(:checked) .catalog__filter-control-mark{
-  background-color: rgba(255, 255, 255, 1);
-  outline: 3px solid #83B3D3;
-} */
 .catalog__filter-label:active .catalog__filter-control-mark {
   opacity: 0.3;
   outline: none;
