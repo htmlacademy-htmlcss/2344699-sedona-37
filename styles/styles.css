@@ -1059,7 +1059,9 @@ html {
 .modal__search-blocs-amount {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
+  margin: 0;
 }
 .modal__search-input {
   color: #000;
@@ -1071,9 +1073,10 @@ html {
   border: 0;
 }
 .modal__search-input-date {
-  width: 360px;
+  width: 440px;
   min-height: 48px;
   padding: 0 60px 0 20px;
+  box-sizing: border-box;
 }
 .modal__search-input-amount {
   width: 30px;
@@ -1089,6 +1092,7 @@ html {
   justify-content: center;
   align-content: center;
   box-sizing: border-box;
+  height: fit-content;
 }
 .modal__search-button-amount {
   color: rgba(117, 97, 87, 0.3);
@@ -1096,8 +1100,10 @@ html {
   width: 20px;
   height: 20px;
   margin: 14px 10px;
-  display: flex;
   padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .modal__search-button-amount:hover {
   color: rgba(0, 0, 0, 1)
@@ -1135,13 +1141,6 @@ html {
   outline: none;
   background-color: #E6E6E6;
 }
-.modal__button--close-img {
-  width: 20px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .modal__button--send {
   width: 577px;
   min-height: 60px;
@@ -1158,6 +1157,11 @@ html {
   justify-content: space-between;
   align-items: center;
   position: relative;
+}
+.modal__search-block-amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .modal__search-label-date-start::after {
   content: attr(data-error);
@@ -1192,16 +1196,6 @@ html {
   left: 539px;
   position: absolute;
 }
-.modal__search-label-amount::before {
-  background-image: url(../);
-  position: absolute;
-  content: "";
-}
-.modal__search-label-amount::after {
-  background-image: url(../);
-  position: absolute;
-  content: "";
-}
 /* tooltip */
 .tooltip {
   width: 26px;
@@ -1235,8 +1229,8 @@ html {
   padding: 20px 18px 18px 22px;
   box-sizing: border-box;
   position: absolute;
-  right: 42px;
-  bottom: -148px;
+  right: 112px;
+  bottom: 25px;
   display: none;
 }
 .tooltip__toggle:hover + .tooltip__text,
