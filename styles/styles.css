@@ -1059,7 +1059,7 @@ html {
 .modal__search-blocs-amount {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
   margin: 0;
 }
@@ -1093,6 +1093,9 @@ html {
   align-content: center;
   box-sizing: border-box;
   height: fit-content;
+}
+.modal__search-label-text {
+  max-width: 92px;
 }
 .modal__search-button-amount {
   color: rgba(117, 97, 87, 0.3);
@@ -1161,7 +1164,7 @@ html {
 .modal__search-block-amount {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
 }
 .modal__search-label-date-start::after {
   content: attr(data-error);
