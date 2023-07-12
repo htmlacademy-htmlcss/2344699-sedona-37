@@ -26,7 +26,7 @@
             </a>
           </div>
           <div class="header__button-list">
-            <a class="header__button-icon header__button-icon--search" href="modal.html">
+            <a class="header__button-icon header__button-icon--search" href="#">
               <div class="header__button-icon--search-img"></div>
               <span class="hidden">Поиск.</span>
             </a>
@@ -102,7 +102,7 @@
         <section class="main__hotel">
           <h2 class="main__hotel-title">Заинтересовались?</h2>
           <p class="main__hotel-description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="button main__hotel-button button--brown" href="modal.html">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+          <a class="button main__hotel-button button--brown" href="catalog.html">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
         </section>
         <section class="newsletter">
           <h2 class="newsletter__title">Подпишитесь на рассылку</h2>
@@ -138,6 +138,81 @@
           <span class="hidden">Ссылка на htmlacademy.</span>
         </a>
       </footer>
+    </div>
+    <div class="modal__container">
+      <div class="modal modal__search">
+        <button class="modal__button--close" type="button">
+          <div class="modal__button--close-img">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 1.29231L12.7077 0L7 5.70769L1.29231 0L0 1.29231L5.70769 7L0 12.7077L1.29231 14L7 8.29231L12.7077 14L14 12.7077L8.29231 7L14 1.29231Z" fill="currentColor"/>
+              </svg>
+          </div>
+          <span class="hidden">Закрыть модальное окно.</span>
+        </button>
+        <h2 class="modal__title">Поиск гостиницы в Седоне</h2>
+        <form class="modal__search-form" action="https://echo.htmlacademy.ru/" method="get">
+          <div class="modal__search-block modal__search-start">
+            <label class="modal__search-label modal__search-label-data modal__search-label-date-start" for="search-start" data-error="Мы не можем отправить вас в прошлое.">Дата заезда:
+              <input class="modal__search-input modal__search-input-date" type="text" name="search-start" aria-label="Ввод даты заезда." value="27 апреля 2020">
+            </label>
+          </div>
+          <div class="modal__search-block modal__search-end">
+            <label class="modal__search-label modal__search-label-data modal__search-label-data-end" for="search-end" data-ok="На эти даты есть свободные номера. Пока есть.">Дата выезда:
+              <input class="modal__search-input modal__search-input-date" type="text" name="search-end" aria-label="Ввод даты выезда." value="1 сентября 2023">
+            </label>
+          </div>
+          <div class="modal__search-blocs-amount">
+            <div class="modal__search-block modal__search-adults">
+              <label class="modal__search-label modal__search-label-amount" for="search-adults">
+                <span class="modal__search-label-text">Взрослые:</span>
+                <div class="modal__search-box">
+                  <button class="modal__search-button-minus modal__search-button-amount" type="button">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 9V11H17V9H3Z" fill="currentColor"/>
+                    </svg>
+                  </button>
+                  <input class="modal__search-input modal__search-input-amount" type="text" name="search-adults" aria-label="Количество взрослых." value="2">
+                  <button class="modal__search-button-plus modal__search-button-amount" type="button">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor"/>
+                    </svg>
+                  </button>
+                </div>
+              </label>
+            </div>
+            <div class="modal__search-block modal__search-children">
+              <label class="modal__search-label modal__search-label-amount" for="search-children">
+                <span class="modal__search-label-text">Дети:</span>
+                <span class="tooltip">
+                  <button class="tooltip__toggle" type="button">
+                    <svg class="tooltip__img" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="13" cy="13" r="13" fill="#83B3D3"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z" fill="white"/>
+                    </svg>
+                  </button>
+                  <span class="tooltip__text">
+                    Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                  </span>
+                </span>
+                <div class="modal__search-box">
+                  <button class="modal__search-button-minus modal__search-button-amount" type="button">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 9V11H17V9H3Z" fill="currentColor"/>
+                    </svg>
+                  </button>
+                  <input class="modal__search-input modal__search-input-amount" type="text" name="search-children" aria-label="Количество детей." value="2">
+                  <button class="modal__search-button-plus modal__search-button-amount" type="button">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor"/>
+                    </svg>
+                  </button>
+                </div>
+              </label>
+            </div>
+          </div>
+          <button class="modal__button--send button button--blue" type="submit">Найти</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
