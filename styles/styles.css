@@ -1155,7 +1155,7 @@ html {
 .modal__search-label {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   position: relative;
 }
 .modal__search-block-amount {
