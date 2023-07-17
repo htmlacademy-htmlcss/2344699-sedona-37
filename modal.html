@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="page">
-      <header class="header">
+      <header class="header" data-test="header">
         <a class="header__nav-logo" href="index.html">
           <img class="header__nav-logo-img" src="images/logo.svg" alt="Логотип сайта." width="140" height="70">
         </a>
@@ -26,7 +26,7 @@
             </a>
           </div>
           <div class="header__button-list">
-            <a class="header__button-icon header__button-icon--search" href="#">
+            <a class="header__button-icon header__button-icon--search" href="modal.html">
               <div class="header__button-icon--search-img"></div>
               <span class="visually-hidden">Поиск.</span>
             </a>
@@ -38,10 +38,12 @@
           </div>
         </nav>
       </header>
-      <main class="main main__container">
-        <h1 class="visually-hidden">Добро пожаловать в Седону.</h1>
-        <div class="main__logo"></div>
-        <section class="main__advantages">
+      <main class="main main__container" data-test="main">
+        <div class="hero" data-test="hero">
+          <h1 class="visually-hidden">Добро пожаловать в Седону.</h1>
+          <div class="main__logo"></div>
+        </div>
+        <section class="main__advantages" data-test="advantages">
           <div class="main__advantages-title-block">
             <h2 class="main__advantages-title">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
             <p class="main__advantages-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -78,7 +80,7 @@
             </li>
           </ul>
         </section>
-        <section class="main__recommendations">
+        <section class="main__recommendations" data-test="service">
             <h2 class="main__recommendations-title">Приезжайте в Седону отдохнуть<br>в комфорте и уюте!</h2>
             <p class="main__recommendations-description">Опытный персонал и качественное обслуживание!</p>
           <ul class="main__recommendations-list list">
@@ -99,12 +101,12 @@
             </li>
           </ul>
         </section>
-        <section class="main__hotel">
+        <section class="main__hotel" data-test="search">
           <h2 class="main__hotel-title">Заинтересовались?</h2>
           <p class="main__hotel-description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="button main__hotel-button button--brown" href="catalog.html">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+          <a class="button main__hotel-button button--brown" href="modal.html">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
         </section>
-        <section class="newsletter">
+        <section class="newsletter" data-test="subscribe">
           <h2 class="newsletter__title">Подпишитесь на рассылку</h2>
           <p class="newsletter__description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
           <form class="newsletter__form" action="https://echo.htmlacademy.ru/" method="post">
@@ -113,7 +115,7 @@
           </form>
         </section>
       </main>
-      <footer class="footer">
+      <footer class="footer" data-test="footer">
         <h2 class="visually-hidden">Контакты.</h2>
         <div class="footer__social-list">
           <a class="footer__social-button" href="https://vk.com/htmlacademy" target="_blank" rel="nofollow">
@@ -139,7 +141,7 @@
         </a>
       </footer>
     </div>
-    <div class="modal__container">
+    <div class="modal__container" data-test="modal">
       <div class="modal modal__search">
         <button class="modal__button--close" type="button">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -150,14 +152,18 @@
         <h2 class="modal__title">Поиск гостиницы в Седоне</h2>
         <form class="modal__search-form" action="https://echo.htmlacademy.ru/" method="get">
           <div class="modal__search-block modal__search-start">
-            <label class="modal__search-label modal__search-label-data modal__search-label-date-start" for="search-start" data-error="Мы не можем отправить вас в прошлое.">Дата заезда:
-              <input class="modal__search-input modal__search-input-date" type="text" name="search-start" aria-label="Ввод даты заезда." value="27 апреля 2020" id="search-start">
+            <label class="modal__search-label modal__search-label-data modal__search-label-date-start" for="search-start">
+              <span class="modal__search-label-data-text">Дата заезда:</span>
+              <input class="modal__search-input modal__search-input-date" type="text" name="search-start" aria-label="Ввод даты заезда." value="27 апреля 2020" id="search-start" placeholder="Укажите дату">
             </label>
+            <span class="modal__search-label-data-text-error">Мы не можем отправить вас в прошлое.</span>
           </div>
           <div class="modal__search-block modal__search-end">
-            <label class="modal__search-label modal__search-label-data modal__search-label-data-end" for="search-end" data-ok="На эти даты есть свободные номера. Пока есть.">Дата выезда:
-              <input class="modal__search-input modal__search-input-date" type="text" name="search-end" aria-label="Ввод даты выезда." value="1 сентября 2023" id="search-end">
+            <label class="modal__search-label modal__search-label-data modal__search-label-data-end" for="search-end">
+              <span class="modal__search-label-data-text">Дата выезда:</span>
+              <input class="modal__search-input modal__search-input-date" type="text" name="search-end" aria-label="Ввод даты выезда." value="1 сентября 2023" id="search-end" placeholder="Укажите дату">
             </label>
+            <span class="modal__search-label-data-text-ok">На эти даты есть свободные номера. Пока есть.</span>
           </div>
           <div class="modal__search-blocs-amount">
             <div class="modal__search-block modal__search-block-amount">
@@ -166,12 +172,14 @@
               </label>
               <div class="modal__search-box">
                 <button class="modal__search-button-minus modal__search-button-amount" type="button">
+                  <span class="visually-hidden">Уменьшение количества взрослых.</span>
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M3 9V11H17V9H3Z" fill="currentColor"/>
                   </svg>
                 </button>
                 <input class="modal__search-input modal__search-input-amount" type="text" name="search-adults" aria-label="Количество взрослых." value="2" id="search-adults">
                 <button class="modal__search-button-plus modal__search-button-amount" type="button">
+                  <span class="visually-hidden">Увеличение количества взрослых.</span>
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor"/>
                   </svg>
@@ -184,6 +192,7 @@
               </label>
               <span class="tooltip">
                 <button class="tooltip__toggle" type="button">
+                  <span class="visually-hidden">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                   <svg class="tooltip__img" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="13" cy="13" r="13" fill="#83B3D3"/>
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z" fill="white"/>
@@ -195,12 +204,14 @@
               </span>
               <div class="modal__search-box">
                 <button class="modal__search-button-minus modal__search-button-amount" type="button">
+                  <span class="visually-hidden">Уменьшение количества детей.</span>
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M3 9V11H17V9H3Z" fill="currentColor"/>
                   </svg>
                 </button>
                 <input class="modal__search-input modal__search-input-amount" type="text" name="search-children" aria-label="Количество детей." value="2" id="search-children">
                 <button class="modal__search-button-plus modal__search-button-amount" type="button">
+                  <span class="visually-hidden">Увеличение количества детейх.</span>
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor"/>
                   </svg>
