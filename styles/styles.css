@@ -872,7 +872,7 @@ html {
 .catalog__select {
   font-size: 18px;
   line-height: 21px;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   color: #333333;
   width: 292px;
   min-height: 49px;
@@ -1060,7 +1060,7 @@ html {
 }
 .modal__search-block {
   font-size: 20px;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   line-height: 24px;
   text-transform: capitalize;
@@ -1077,7 +1077,7 @@ html {
 .modal__search-input {
   color: #000;
   font-size: 18px;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   line-height: 24px;
   background-color: #F2F2F2;
@@ -1173,7 +1173,7 @@ html {
   width: 577px;
   min-height: 60px;
   text-align: center;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -1196,7 +1196,7 @@ html {
   max-width: 136px;
 }
 .modal__search-label-data-text-error {
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
@@ -1205,7 +1205,7 @@ html {
   margin-left: 157px;
 }
 .modal__search-label-data-text-ok {
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
@@ -1249,7 +1249,7 @@ html {
   color: #FFF;
   width: 256px;
   min-height: 143px;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
