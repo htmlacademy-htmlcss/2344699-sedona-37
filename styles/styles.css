@@ -38,7 +38,7 @@ html {
   flex-direction: column;
   min-height: 100%;
 }
-.hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -56,7 +56,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8px 0;
+  padding: 8px 8px;
   border: none;
   font-weight: 700;
   text-align: center;
@@ -67,6 +67,7 @@ html {
   font-family: "PT Sans", sans-serif;
   height: fit-content;
   cursor: pointer;
+  box-sizing: border-box;
 }
 .button--brown {
   background-color: #756157;
@@ -132,14 +133,17 @@ html {
   color: #000000;
   padding: 20px 16px;
   display: block;
+  max-width: 100px;
 }
 .header__nav-link-button {
   width: 160px;
   margin-left: 20px;
+  margin-top: 14px;
+  box-sizing: border-box;
 }
 .header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   margin: 0 70px;
 }
 .header__nav {
@@ -150,8 +154,7 @@ html {
 .header__button-list {
   display: flex;
   margin-left: auto;
-  align-items: center;
-  margin-top: 14px;
+  align-items: flex-start;
 }
 .header__nav-link-text {
   position: relative;
@@ -172,6 +175,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 22px;
 }
 .header__button-icon--search-img {
   background-image: url(../images/search.svg);
@@ -216,7 +220,7 @@ html {
   left: 0;
 }
 .header__nav-list {
-  margin-left: 30px;
+  margin-left: 138px;
   width: 624px;
   display: flex;
   flex-wrap: wrap;
@@ -225,6 +229,7 @@ html {
   background-image: url("../images/main-logo.jpg");
   width: 1200px;
   height: 485px;
+  background-color: #82B3D3;
 }
 /*advantages index*/
 .main__advantages-list {
@@ -272,7 +277,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 85px;
+  padding: 100px 85px;
   box-sizing: border-box;
   background-color: rgba(131, 179, 211, 0.12);
   height: fit-content;
@@ -285,7 +290,6 @@ html {
   background-color: rgba(131, 179, 211, 0.2);
 }
 .main__advantages-item--img {
-  background-color: #82B3D3;
   background-size: cover;
   box-sizing: border-box;
 }
@@ -293,11 +297,13 @@ html {
   background-image: url("../images/advantages-city.jpg");
   width: 800px;
   min-height: 385px;
+  background-color: #82B3D3;
 }
 .main__advantages-item--img-canyon {
   background-image: url("../images/advantages-canyon.jpg");
   width: 800px;
   min-height: 385px;
+  background-color: #82B3D3;
 }
 .main__advantages-item-twice {
   grid-column: span 2;
@@ -359,7 +365,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 85px;
+  padding: 80px 85px;
   box-sizing: border-box;
   height: fit-content;
 }
@@ -465,7 +471,7 @@ html {
 }
 .newsletter__submit {
   width: 232px;
-  height: 52px;
+  min-height: 52px;
   font-size:20px;
   line-height: 36px;
   border-top-left-radius: 0;
@@ -576,6 +582,7 @@ html {
 }
 .breadcrumbs__item {
   position: relative;
+  max-width: 150px;
 }
 .breadcrumbs__item:not(:last-child)::after {
   background-image: url(../images/breadcrumbs-arrow.svg);
@@ -592,6 +599,7 @@ html {
   display: flex;
   margin-bottom: 40px;
   width: 1060px;
+  align-items: baseline;
 }
 /* catalog filter hotels */
 .catalog__filter-title {
@@ -899,12 +907,14 @@ html {
   line-height: 21px;
   text-align: center;
   color: #333333;
+  max-width: 100px;
 }
 .hotel-list__card-price {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
   color: #333333;
+  max-width: 100px;
 }
 .hotel-list__card-info {
   display: flex;
@@ -919,7 +929,7 @@ html {
 .hotel-list__card-rating {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 .hotel-list__card-button-more {
   width: 140px;
