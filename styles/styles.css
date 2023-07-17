@@ -1082,12 +1082,25 @@ html {
   line-height: 24px;
   background-color: #F2F2F2;
   border: 0;
+  border-radius: 4px;
+}
+.modal__search-input-date::placeholder {
+  color: rgba(0, 0, 0, 0.6);
 }
 .modal__search-input-date {
   width: 440px;
   min-height: 48px;
   padding: 0 60px 0 20px;
   box-sizing: border-box;
+}
+.modal__search-input-date:hover {
+  border-radius: 4px;
+  background-color: #E6E6E6;
+}
+.modal__search-input-date:focus {
+  border-radius: 4px;
+  outline: 3px solid #83B3D3;
+  background-color: #E6E6E6;
 }
 .modal__search-input-amount {
   width: 30px;
