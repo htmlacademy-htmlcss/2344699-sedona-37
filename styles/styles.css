@@ -1064,7 +1064,7 @@ html {
   font-weight: 700;
   line-height: 24px;
   text-transform: capitalize;
-  margin-bottom: 48px;
+  margin-bottom: 26px;
 }
 .modal__search-blocs-amount {
   display: flex;
@@ -1072,6 +1072,7 @@ html {
   align-items: baseline;
   justify-content: space-between;
   margin: 0;
+  margin-top: -4px;
 }
 .modal__search-input {
   color: #000;
@@ -1106,6 +1107,7 @@ html {
 }
 .modal__search-label-text {
   max-width: 92px;
+  margin-top: 13px;
 }
 .modal__search-button-amount {
   color: rgba(117, 97, 87, 0.3);
@@ -1164,6 +1166,7 @@ html {
   line-height: 24px;
   text-transform: uppercase;
   border-radius: 10px;
+  margin-top: 21px;
 }
 .modal__search-label {
   display: flex;
@@ -1174,31 +1177,29 @@ html {
 .modal__search-block-amount {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
-.modal__search-label-date-start::after {
-  content: attr(data-error);
+.modal__search-label-data-text {
+  max-width: 136px;
+}
+.modal__search-label-data-text-error {
   font-family: PT Sans;
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
   color: #FF5757;
-  bottom: -25px;
-  right: 140px;
-  position: absolute;
   text-transform: none;
+  margin-left: 157px;
 }
-.modal__search-label-data-end::after {
-  content: attr(data-ok);
+.modal__search-label-data-text-ok {
   font-family: PT Sans;
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
   color: #333;
-  bottom: -25px;
-  right: 90px;
-  position: absolute;
   text-transform: none;
+  margin-left: 157px;
+  margin-bottom: 4px;
 }
 .modal__search-label-data::before {
   background-image: url(../images/calendar.svg);
@@ -1221,6 +1222,7 @@ html {
   margin: 0;
   display: block;
   background-color: transparent;
+  margin-top: 12px;
 }
 .tooltip__img {
   width: 100%;
