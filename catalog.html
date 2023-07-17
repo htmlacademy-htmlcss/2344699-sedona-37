@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="page">
-      <header class="header">
+      <header class="header" data-test="header">
         <a class="header__nav-logo" href="index.html">
           <img class="header__nav-logo-img" src="images/logo.svg" alt="Логотип сайта." width="140" height="70">
         </a>
@@ -38,7 +38,7 @@
           </div>
         </nav>
       </header>
-      <main class="main main__container">
+      <main class="main main__container" data-test="main">
         <section class="catalog">
           <header class="catalog__header">
             <h1 class="catalog__header-title">Гостиницы Седоны</h1>
@@ -58,7 +58,7 @@
             </div>
           </header>
           <h2 class="visually-hidden">Фильтры для поиска гостиницы.</h2>
-          <form class="catalog__filter" action="https://echo.htmlacademy.ru/" method="get">
+          <form class="catalog__filter" action="https://echo.htmlacademy.ru/" method="get" data-test="filter">
             <fieldset class="catalog__filter-group">
               <legend class="catalog__filter-title">Инфраструктура:</legend>
               <ul class="catalog__filter-list list">
@@ -140,7 +140,7 @@
             </div>
           </form>
         </section>
-        <section class="hotel">
+        <section class="hotel" data-test="catalog">
           <div class="hotel__header">
             <h2 class="catalog__titte">Найдено гостиниц: 38</h2>
             <div class="select">
@@ -266,7 +266,7 @@
             </li>
           </ul>
         </section>
-        <section class="newsletter newsletter--lite">
+        <section class="newsletter newsletter--lite" data-test="subscribe">
           <h2 class="newsletter__title">Подпишитесь на рассылку</h2>
           <p class="newsletter__description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
           <form class="newsletter__form" action="https://echo.htmlacademy.ru/" method="post">
@@ -275,7 +275,7 @@
           </form>
         </section>
       </main>
-      <footer class="footer">
+      <footer class="footer" data-test="footer">
         <h2 class="visually-hidden">Контакты.</h2>
         <div class="footer__social-list">
           <a class="footer__social-button" href="https://vk.com/htmlacademy" target="_blank" rel="nofollow">
