@@ -669,7 +669,6 @@ html {
 
 .breadcrumbs__link:focus {
   color: #ffffff;
-  outline: none;
 }
 
 .breadcrumbs__link:active {
