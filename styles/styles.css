@@ -211,22 +211,21 @@ html {
   margin-top: 22px;
 }
 
-.header__button-icon--search-img {
+.header__button-icon--search {
   background-image: url("../images/search.svg");
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .header__button-icon--favorites {
   position: relative;
-}
-
-.header__button-icon--favorites-img {
   background-image: url("../images/favorites.svg");
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .header__button-icon--favorites::after {
@@ -316,6 +315,8 @@ html {
   line-height: 21px;
   text-align: center;
   margin: 0;
+  margin-top: 60px;
+  position: relative;
 }
 
 .main__advantages-item {
@@ -325,10 +326,32 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 100px 85px;
+  padding: 99px 85px;
   box-sizing: border-box;
   background-color: rgba(131, 179, 211, 0.12);
   height: fit-content;
+}
+
+.main__advantages-item-dash--white p::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+  top: -31px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.main__advantages-item-dash--gray p::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: -31px;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .main__advantages-item--blue {
@@ -361,20 +384,6 @@ html {
 
 .main__advantages-item-twice {
   grid-column: span 2;
-}
-
-.main__decorate-dash--gray {
-  width: 60px;
-  height: 2px;
-  background-color: rgba(0, 0, 0, 0.3);
-  margin: 30px auto;
-}
-
-.main__decorate-dash--white {
-  width: 60px;
-  height: 2px;
-  background-color: rgba(255, 255, 255, 0.3);
-  margin: 30px auto;
 }
 
 /*recomendation index*/
@@ -427,7 +436,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 80px 85px;
+  padding:  85px 80px 85px 80px;
   box-sizing: border-box;
   height: fit-content;
 }
@@ -436,30 +445,33 @@ html {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.main__recommendations-housing {
+.main__recommendations-housing::before {
   background-image: url("../images/housing.svg");
   width: 75px;
   height: 72px;
-  margin: 0 auto;
+  margin-top: -4px;
+  content: "";
 }
 
-.main__recommendations-food {
+.main__recommendations-food::before {
   background-image: url("../images/food.svg");
   width: 74px;
   height: 70px;
-  margin: 0 auto;
+  margin-top: -2px;
+  content: "";
 }
 
-.main__recommendations-souvenirs {
+.main__recommendations-souvenirs::before {
   background-image: url("../images/souvenirs.svg");
   width: 64px;
   height: 76px;
-  margin: 0 auto;
+  margin-top: -6px;
+  content: "";
 }
 
-.main__recommendations--img {
+/* .main__recommendations--img {
   order: -1;
-}
+} */
 
 /*hotel index */
 .main__hotel {
@@ -467,7 +479,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 96px 0;
+  margin: 95px 0;
   padding: 0 304px;
 }
 
@@ -972,23 +984,20 @@ html {
 
 .catalog__button-view--cards {
   background-image: url("../images/view-cards.svg");
-  width: 16px;
-  height: 14px;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .catalog__button-view--one-card {
   background-image: url("../images/view-one-card.svg");
-  width: 16px;
-  height: 14px;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .catalog__button-view--list {
   background-image: url("../images/view-list.svg");
-  width: 16px;
-  height: 14px;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .catalog__button-view:first-child {
