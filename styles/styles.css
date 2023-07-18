@@ -629,6 +629,7 @@ html {
   font-weight: 700;
   color: #FFFFFF;
   margin-bottom: 32px;
+  max-width: 280px;
 }
 .catalog__button-select {
   width: 191px;
@@ -924,7 +925,7 @@ html {
 .hotel-list__card-buttons {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
 }
 .hotel-list__card-rating {
   display: flex;
@@ -958,7 +959,7 @@ html {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 19px 20px 17px 20px;
   height: fit-content;
 }
 .hotel-list {
@@ -970,7 +971,7 @@ html {
   margin: 0 70px;
   padding: 0;
   border-bottom: 1px solid #E6E6E6;
-  padding-bottom: 40px;
+  padding-bottom: 38px;
 }
 .hotel-list__card-image {
   margin-bottom:16px;
@@ -1019,7 +1020,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  margin: 40px 70px 60px 70px;
+  margin: 39px 70px 60px 70px;
   margin-bottom: 60px;
 }
 .pagination__item {
