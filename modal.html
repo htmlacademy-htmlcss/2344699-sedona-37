@@ -27,11 +27,9 @@
           </div>
           <div class="header__button-list">
             <a class="header__button-icon header__button-icon--search" href="modal.html">
-              <div class="header__button-icon--search-img"></div>
               <span class="visually-hidden">Поиск.</span>
             </a>
             <a class="header__button-icon header__button-icon--favorites" href="#" data-favorites="12">
-              <div class="header__button-icon--favorites-img"></div>
               <span class="visually-hidden">Избранное.</span>
             </a>
             <a class="button header__nav-link-button button--brown" href="#">Хочу сюда!</a>
@@ -154,14 +152,14 @@
           <div class="modal__search-block modal__search-start">
             <label class="modal__search-label modal__search-label-data modal__search-label-date-start" for="search-start">
               <span class="modal__search-label-data-text">Дата заезда:</span>
-              <input class="modal__search-input modal__search-input-date" type="text" name="search-start" aria-label="Ввод даты заезда." value="27 апреля 2020" id="search-start" placeholder="Укажите дату">
+              <input class="modal__search-input modal__search-input-date" type="text" name="search-start" aria-label="Ввод даты заезда." value="27 апреля 2020" id="search-start" placeholder="Укажите дату" required>
             </label>
             <span class="modal__search-label-data-text-error">Мы не можем отправить вас в прошлое.</span>
           </div>
           <div class="modal__search-block modal__search-end">
             <label class="modal__search-label modal__search-label-data modal__search-label-data-end" for="search-end">
               <span class="modal__search-label-data-text">Дата выезда:</span>
-              <input class="modal__search-input modal__search-input-date" type="text" name="search-end" aria-label="Ввод даты выезда." value="1 сентября 2023" id="search-end" placeholder="Укажите дату">
+              <input class="modal__search-input modal__search-input-date" type="text" name="search-end" aria-label="Ввод даты выезда." value="1 сентября 2023" id="search-end" placeholder="Укажите дату" required>
             </label>
             <span class="modal__search-label-data-text-ok">На эти даты есть свободные номера. Пока есть.</span>
           </div>
@@ -177,7 +175,7 @@
                     <path d="M3 9V11H17V9H3Z" fill="currentColor"/>
                   </svg>
                 </button>
-                <input class="modal__search-input modal__search-input-amount" type="text" name="search-adults" aria-label="Количество взрослых." value="2" id="search-adults">
+                <input class="modal__search-input modal__search-input-amount" type="text" name="search-adults" aria-label="Количество взрослых." value="2" id="search-adults" required>
                 <button class="modal__search-button-plus modal__search-button-amount" type="button">
                   <span class="visually-hidden">Увеличение количества взрослых.</span>
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -209,7 +207,7 @@
                     <path d="M3 9V11H17V9H3Z" fill="currentColor"/>
                   </svg>
                 </button>
-                <input class="modal__search-input modal__search-input-amount" type="text" name="search-children" aria-label="Количество детей." value="2" id="search-children">
+                <input class="modal__search-input modal__search-input-amount" type="text" name="search-children" aria-label="Количество детей." value="2" id="search-children" required>
                 <button class="modal__search-button-plus modal__search-button-amount" type="button">
                   <span class="visually-hidden">Увеличение количества детейх.</span>
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
