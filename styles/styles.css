@@ -1185,6 +1185,8 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 8px;
+  box-sizing: border-box;
 }
 
 .pagination__link:hover, .pagination__link:focus {
