@@ -300,6 +300,7 @@ html {
   text-align: center;
   margin-top: 25px;
   color: #333333;
+  width: 660px;
 }
 
 .main__advantages-subtitle {
@@ -836,6 +837,7 @@ html {
   padding-left: 20px;
   padding-right: 40px;
   font-family: "PT Sans", sans-serif;
+  -moz-appearance:textfield;
 }
 
 .catalog__filter-price-input:focus {
@@ -1048,13 +1050,14 @@ html {
   min-height: 49px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
-  padding: 0 20px;
+  padding: 14px 20px;
   margin-right: 70px;
   cursor: pointer;
   background-image: url("../images/select-arrow.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
   appearance: none;
+  background-color: #ffffff;
 }
 
 .catalog__select:hover, .catalog__select:focus {
@@ -1177,7 +1180,6 @@ html {
   background-color: #82b3d3;
   text-decoration: none;
   min-width: 60px;
-  max-width: 200px;
   min-height: 60px;
   border-radius: 4px;
   display: flex;
@@ -1339,6 +1341,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #f2f2f2;
 }
 
 .modal__search-button-amount:hover {
